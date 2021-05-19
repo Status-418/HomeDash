@@ -1,0 +1,170 @@
+{% extends 'dashboard/core/base.html' %}
+{% load icon %}
+
+{% block body %}
+<main>
+    <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+        <div class="container-fluid">
+            <div class="page-header-content">
+                <div class="row align-items-center justify-content-between pt-3">
+                    <div class="col-auto mb-3">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon">
+                                {% icon "home" class="css-class"%}
+                            </div>
+                            Home Systems
+                        </h1>
+                    </div>
+                    <div class="col-12 col-xl-auto mb-3">Helps keeping upto-date</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main page content-->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-8">
+                <div class="row mb-2">
+                    <div class="card w-100">
+                        <div class="card-header">PiHole</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card bg-success text-white mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="mr-3">
+                                                    <div class="text-white small">Totatl queryies (14 clients)</div>
+                                                    <div class="text-lg font-weight-bold">6,357</div>
+                                                </div>
+                                                {% icon "globe" class="css-class" height="62" width="62" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card bg-primary text-white mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="mr-3">
+                                                    <div class="text-white small">Queries Blocked</div>
+                                                    <div class="text-lg font-weight-bold">3,067</div>
+                                                </div>
+                                                {% icon "pause-circle" class="css-class" height="62" width="62" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card bg-warning text-white mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="mr-3">
+                                                    <div class="text-white small">Percent Blocked</div>
+                                                    <div class="text-lg font-weight-bold">48.2%</div>
+                                                </div>
+                                                {% icon "pie-chart" class="css-class" height="62" width="62" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card bg-danger text-white mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="mr-3">
+                                                    <div class="text-white small">Domains on BlockList</div>
+                                                    <div class="text-lg font-weight-bold">1,221,168</div>
+                                                </div>
+                                                {% icon "list" class="css-class" height="62" width="62" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-2">
+                    <div class="card">
+                        <div class="card-header">Home Automation</div>
+                        <div class="card-body">This is a blank page. You can use this page as a boilerplate for creating new pages! This page uses the compact page header format, which allows you to create pages with a very minimal and slim page header so you can get right to showcasing your content.</div>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-4">
+                <div class="card w-100">
+                    <div class="card-header">Today</div>
+                    <div class="card-body ">
+                        <div class=row>
+                            <div class="card card-icon w-100">
+                                <div class="row no-gutters">
+                                    <div class="col-auto card-icon-aside bg-primary text-white">
+                                        {% icon "watch" class="css-class" height="62" width="62" %}
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h1 class="card-title">8:53:03</h1>
+                                            <h5 class="card-text">18/05/2021</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=row>
+                            <div class="card card-icon w-100">
+                                <div class="row no-gutters">
+                                    <div class="col-auto card-icon-aside bg-danger text-white">
+                                        {% icon "mail" class="css-class" %}
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="card-tem">Cras justo odio</li>
+                                                <li class="card-tem">Dapibus ac facilisis in</li>
+                                                <li class="card-tem">Morbi leo risus</li>
+                                                <li class="card-tem">Porta ac consectetur ac</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=row>
+                            <div class="card card-icon w-100">
+                                <div class="row no-gutters">
+                                    <div class="col-auto card-icon-aside bg-success text-white">
+                                        {% icon "calendar" class="css-class" %}
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="card-tem">20/05 13:00 - Team Call</li>
+                                                <li class="card-tem">Dapibus ac facilisis in</li>
+                                                <li class="card-tem">Morbi leo risus</li>
+                                                <li class="card-tem">Porta ac consectetur ac</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+</main>
+<footer class="footer mt-auto footer-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 small">Copyright &copy; Your Website 2021</div>
+            <div class="col-md-6 text-md-right small">
+                <a href="#!">Privacy Policy</a>
+                &middot;
+                <a href="#!">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}

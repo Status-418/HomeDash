@@ -1,0 +1,296 @@
+{% extends 'dashboard/core/base.html' %}
+{% load icon %}
+
+{% block body %}
+<main>
+    <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+        <div class="container-fluid">
+            <div class="page-header-content">
+                <div class="row justify-content-between pt-3">
+                    <div class="col-auto mb-3">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon">
+                                {% icon "home" class="css-class"%}
+                            </div>
+                            Home Systems
+                        </h1>
+                    </div>
+                    <div class="col-12 col-xl-auto mb-3">Helps keeping upto-date</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main page content-->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="col-sm-12 mb-3">
+                            <div class="card w-100">
+                                <div class="card-header">Today</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 1-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-danger h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-primary mb-1">Emails</div>
+                                                            <div class="small">Bob; Hello there</div>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "mail" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 2-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-secondary h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-secondary mb-1">Calendar</div>
+                                                            <div class="small"> 13.00 Team Meeting</div>
+                                                            <div class="small"> 16.00 Pretp Call with Bob</div>
+                                                            <div class="small"> 17.30 Handover Call</div>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "calendar" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 3-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-success h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-success mb-1">Status</div>
+                                                            <div class="h5">In Meeting</div>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "users" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mb-3">
+                            <div class="card w-100">
+                                <div class="card-header">PiHole</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 1-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-success h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-success mb-1">Total Queries (14 Clients)</div>
+                                                            <div class="h1">6,436</div>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "globe" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 2-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-primary h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex ">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-primary mb-1">Queryies Blocked</div>
+                                                            <div class="h1"> 2,572</div>
+                                                        </div>
+                                                        <div class="ml-2 justify-content-center">{% icon "x-circle" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 3-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-warning h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-warning mb-1">Percent Blocked</div>
+                                                            <div class="h1">39.5%</div>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "percent" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 4-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-danger h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-danger mb-1">Domains On Blocklist</div>
+                                                            <div class="h1">1,221,168 </div>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "list" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-md-12 mb-4">
+                                            <!-- Dashboard info widget 4-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-secondary h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-info mb-1">Top Clients</div>
+                                                            <ul class="list-group">
+                                                                <li class="card-tem">Guido's Laptop</li>
+                                                                <li class="card-tem">Guido's Work Laptop</li>
+                                                                <li class="card-tem">Lab Server</li>
+                                                                <li class="card-tem">WIN-SD4D0f</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "hard-drive" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-md-12 mb-4">
+                                            <!-- Dashboard info widget 4-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-info h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-info mb-1">Top Domains</div>
+                                                            <ul class="list-group">
+                                                                <li class="card-tem">www.gogole.com</li>
+                                                                <li class="card-tem">www.stackoverflow.com</li>
+                                                                <li class="card-tem">www.bluewinc.h</li>
+                                                                <li class="card-tem">www.cnn.com</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "link-2" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mb-3">
+                            <div class="card w-100">
+                                <div class="card-header">Cups Server</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 1-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-success h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-success mb-1">Printers</div>
+                                                            <div class="row">
+                                                                <div class="col-2">
+                                                                    {% icon "check" class="css-class"  %}
+                                                                </div>
+                                                                <div class="col-10">
+                                                                    <div class="small">Epson WP-4535 </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 2-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-secondary h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-secondary mb-1">Resent Jobs</div>
+                                                            <ul class="list-group">
+                                                                <li class="card-tem">Time Table.docx</li>
+                                                                <li class="card-tem">Milage.xlsx</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "calendar" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-6 mb-4">
+                                            <!-- Dashboard info widget 3-->
+                                            <div class="card border-top-0 border-bottom-0 border-right-0 border-left-lg border-success h-100">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <div class="small font-weight-bold text-success mb-1">Status</div>
+                                                            <div class="h5">In Meeting</div>
+                                                        </div>
+                                                        <div class="ml-2">{% icon "users" class="css-class" height="62" width="62" %}</i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                            <div class="card-header">General</div>
+                            <div class="card-body">
+                                <div class="card mb-4 border-top-lg border-bottom-0 border-right-0 border-left-0 border-danger h-100 px-2">
+                                    <div class=" font-weight-bold text-danger text-right">Time</div>
+                                        <div class="h1">01:09</div>
+                                        <div class="h5">19/05/2032</div>
+                                </div>
+                                <div class="card mb-4 border-top-lg border-bottom-0 border-right-0 border-left-0 border-success h-100 px-2">
+                                    <div class=" font-weight-bold text-success text-right">Status</div>
+                                    <div class="timeline timeline-xs">
+                                        <div class="timeline-item">
+                                            <div class="timeline-item-marker">
+                                                <div class="timeline-item-marker-indicator bg-success"></div>
+                                            </div>
+                                            <div class="timeline-item-content">PiHole</div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-item-marker">
+                                                <div class="timeline-item-marker-indicator bg-success"></div>
+                                            </div>
+                                            <div class="timeline-item-content">CUPS Server</div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-item-marker">
+                                                <div class="timeline-item-marker-indicator bg-danger"></div>
+                                            </div>
+                                            <div class="timeline-item-content">Home Automation</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>      
+    </div>
+</main>
+<footer class="footer mt-auto footer-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 small">By Guido For Guido</div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
